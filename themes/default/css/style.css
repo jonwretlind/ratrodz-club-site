@@ -43,7 +43,7 @@
 
 /*** BASIC LAYOUT ***/
 
-html, body { height: 100%; font-size: 22px;   background-color: #2d1839;}
+html, body { height: 100%; font-size: 1.4vw;   background-color: #2d1839;}
 
 body { display: flex; flex-direction: column; }
 
