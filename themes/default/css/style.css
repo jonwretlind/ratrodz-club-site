@@ -530,3 +530,16 @@ div#About, div#Roadmap {
     background: black url('../img/rr_game_screen_capture_anim.gif') center bottom no-repeat;
     background-size: cover;
 }
+span.ratblock {
+    text-align: left;
+}
+p.two-col {
+    align-items: center;
+}
+.block {
+    margin-top: 100px;
+    padding: 3rem;
+}
+.black {
+    background-color: black;
+}
