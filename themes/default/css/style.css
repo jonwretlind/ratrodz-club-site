@@ -14,6 +14,8 @@
  * @version 2.1
  */
 
+ @import url('https://web.archive.org/web/20211110234711cs_/https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
 * {
     box-sizing: border-box;
     border: 0 none;
@@ -41,14 +43,36 @@
 
 /*** BASIC LAYOUT ***/
 
-html, body { height: 100%; }
+html, body { height: 100%; font-size: 22px; }
 
 body { display: flex; flex-direction: column; }
+
+h1, h2 {
+  font-family: 'Rock Salt', cursive;
+  color: #BE1E2E !important;
+}
+h2, h3 { display: inline-block; margin-top: 2rem; }
 #main { flex: 1 0 auto; }
 #header, #footer { flex: 0 0 auto; }
 
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #BE1E2E !important;
+}
+
+#Message {
+  background-color: #8661B7;
+  color: white;
+  font-size: 1.7rem;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+
 #main {
     padding: 5em 0 4em;
+    background-color: #F3A314;
 }
 
 .container {
@@ -59,11 +83,43 @@ body { display: flex; flex-direction: column; }
 .widescreen .container { max-width: 72em; }
 
 /* very ugly overflow fix, avoid this whenever possible! */
-#main .container { overflow-x: auto; }
+#main .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ iframe {
+   box-shadow: 5px 5px 15px rgba(0,0,0,.3);
+ }
+
+.container h1 {
+  font-size: 3rem;
+}
+
+ .container p{
+   text-align: center;
+   font-size: 1.2rem;
+ }
 
 /*** BASIC LAYOUT: HEADER ***/
 
-#header { background: #2EAE9B; }
+#header {
+  background: linear-gradient(349deg, rgba(5,191,194,1) 0%, rgba(158,80,181,1) 61%, rgba(254,173,0,1) 100%);
+ }
+
+ #header .container {
+   background-image: url('/web/20211110234711im_/https://ratrodz.club/themes/default/img/RGB_RR_home.png');
+   background-size: contain;
+   background-position: center bottom;
+   background-repeat: no-repeat;
+   min-height: 70vh;
+ }
+
+ #header .social {
+   margin-top: 20px;
+   float: left;
+ }
 
 #title, #logo {
     float: left;
@@ -83,7 +139,7 @@ body { display: flex; flex-direction: column; }
 #nav {
     padding: 3em 0;
     text-align: right;
-}
+  }
 #nav ul {
     list-style: none;
     margin: 0;
@@ -111,7 +167,7 @@ body { display: flex; flex-direction: column; }
 /*** BASIC LAYOUT: FOOTER ***/
 
 #footer {
-    background: #707070;
+    background: #be1e2e;
     color: #C0C0C0;
 }
 
@@ -123,15 +179,21 @@ body { display: flex; flex-direction: column; }
     padding: 3em 0;
 }
 
-#footer .social {
-    float: right;
-    padding: 1.5em 0 1.5em 1em;
-    font-size: 2rem;
-}
+#footer .social { align-items: center; display: flex; flex-direction: column; padding-top: 20px;}
+#footer .social a { margin: 0 auto; position: relative;}
 
 /*** BASIC LAYOUT: EXTRA SMALL DEVICES ***/
 
 @media (max-width: 767px) {
+
+  #header .container {
+    background-image: url('/web/20211110234711im_/https://ratrodz.club/themes/default/img/RGB_RR_home.png');
+    background-size: contain;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    min-height: 30vh;
+  }
+
     #main { padding: 2em 0 1em; }
 
     #title, #logo { padding: 2em 1.5em 2em 0; }
@@ -155,7 +217,7 @@ body { display: flex; flex-direction: column; }
     }
 
     .js #nav-toggle {
-        display: block;
+        display: none;
         float: right;
         width: 2em;
         margin: 0.6667em 0;
@@ -165,9 +227,13 @@ body { display: flex; flex-direction: column; }
         cursor: pointer;
     }
     .js #nav-toggle > * { vertical-align: middle;  }
-
-    #footer p { padding: 1em 0; }
-    #footer .social { padding: 0.5em 0 0.5em 1em; }
+    #footer .container {
+      display: flex;
+      flex-direction: column;
+    }
+    #footer p { padding: 1em 0; font-size: 13px; text-align: center;}
+    #footer .social { align-items: center; display: flex; flex-direction: column; padding-top: 20px;}
+    #footer .social a { margin: 0 auto; position: relative;}
 }
 
 /*** TYPOGRAPHY ***/
@@ -206,6 +272,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0.6em;
     font-weight: bold;
     color: #333;
+    text-align: center;
 }
 h1 { font-size: 2rem; }
 h2 { font-size: 1.7rem; }
@@ -223,6 +290,47 @@ hr {
 }
 
 abbr { text-decoration: underline dotted; }
+
+strong { color: #BE1E2E; }
+
+/* OTHER CONTENT */
+/* grid for sample designs */
+#main .samples {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  margin-right: 40px;
+}
+#main .samples img {
+    width: 100% !important;
+    height: 100% !important;
+}
+#main .container.mint {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 989px) {
+
+  #main .container.mint {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  #main .samples {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin-bottom: 40px;
+    margin-right: 0px;
+  }
+
+}
+
 
 /*** UTILITIES ***/
 
@@ -246,6 +354,8 @@ abbr { text-decoration: underline dotted; }
     .image.large, .image.xlarge { width: 100%; }
     .image.float-left, .image.float-right { float: none; margin: 0 auto; }
 }
+
+
 
 /*** TABLES ***/
 
@@ -384,3 +494,25 @@ input::-moz-focus-inner, button::-moz-focus-inner {
     border: 0;
     padding: 0;
 }
+
+/*
+     FILE ARCHIVED ON 23:47:11 Nov 10, 2021 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:02:13 Sep 17, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.556
+  exclusion.robots: 0.028
+  exclusion.robots.policy: 0.017
+  esindex: 0.011
+  cdx.remote: 23.2
+  LoadShardBlock: 254.0 (3)
+  PetaboxLoader3.datanode: 95.696 (5)
+  PetaboxLoader3.resolve: 1031.624 (2)
+  load_resource: 917.185
+  loaddict: 56.553
+*/
