@@ -624,7 +624,7 @@ p.two-col {
 		),
 		repeating-linear-gradient(90deg, pink 2px, transparent 3px, transparent 40px)
 			10px 0;
-	filter: drop-shadow(0 0 1px magenta) drop-shadow(0 0 3px magenta)
+	filter: drop-shadow(0 0 1px rgb(255, 0, 85)) drop-shadow(0 0 3px rgb(255, 0, 85))
 		drop-shadow(0 0 7px cyan);
 	animation: move 10s linear infinite;
 	opacity: 0.2;
