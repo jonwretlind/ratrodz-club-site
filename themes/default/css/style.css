@@ -100,11 +100,13 @@ h3 {
 .container p {
     text-align: center;
     font-size: 1.2rem;
+}
+.container p.two-col {
     display: flex;
 }
 
-.container p > img{
-    max-width: 20%;
+.container p.two-col > img{
+    max-width: 30%;
 }
 
 /*** BASIC LAYOUT: HEADER ***/
