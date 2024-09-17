@@ -687,14 +687,3 @@ p.two-col {
 		transform: translatey(-10px) rotatez(-5deg) perspective(200px) translatez(0);
 	}
 }
-
-a {
-	width: 100px;
-	height: 75px;
-	position: absolute;
-	bottom: 10px;
-	right: 10px;
-}
-img {
-	width: 100%;
-}
