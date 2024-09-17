@@ -517,3 +517,8 @@ input::-moz-focus-inner, button::-moz-focus-inner {
     flex-wrap: nowrap;
     margin-top: 1rem;
 }
+div#About, div#Roadmap {
+    max-width: 80%;
+    position: relative;
+    margin: 100px auto;
+}
