@@ -101,11 +101,11 @@ h3 {
     text-align: center;
     font-size: 1.2rem;
 }
-.container p.two-col {
+.container .two-col {
     display: flex;
 }
 
-.container p.two-col > img{
+.two-col > img{
     max-width: 30%;
 }
 
