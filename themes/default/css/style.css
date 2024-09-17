@@ -522,6 +522,9 @@ div#About, div#Roadmap {
     max-width: 80%;
     position: relative;
     margin: 100px auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
 }
 .banner {
     width: 100%;
@@ -557,4 +560,10 @@ p.two-col {
 .social-2 {
     width: 40%;
     align-self: center;
+}
+#About > a {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
