@@ -22,15 +22,15 @@
 </head>
 <body{% if config.theme_config.widescreen %} class="widescreen"{% endif %}>
     <div id="header" role="banner">
-    <div class="clouds">
-        <svg>
-            <filter id="filter">
-                <feTurbulence type="fractalNoise" baseFrequency=".008" numOctaves="100" />
-                <feDisplacementMap in="SourceGraphic" scale="300" />
-            </filter>
-        </svg>
-    </div>
         <div class="container">
+            <div class="clouds">
+                <svg>
+                    <filter id="filter">
+                        <feTurbulence type="fractalNoise" baseFrequency=".008" numOctaves="100" />
+                        <feDisplacementMap in="SourceGraphic" scale="300" />
+                    </filter>
+                </svg>
+            </div>
           <!--<a id="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false" tabindex="1">
                 <span class="icon-menu" aria-hidden="true"></span>
                 <span class="sr-only">Toggle Menu</span>
