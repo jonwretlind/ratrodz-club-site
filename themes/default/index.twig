@@ -22,6 +22,28 @@
 </head>
 <body{% if config.theme_config.widescreen %} class="widescreen"{% endif %}>
     <div id="header" role="banner">
+    <div class="clouds">
+    <css-doodle>
+        :doodle {
+            @size: 0px;
+            box-shadow: @m100( @r(100vw) @r(100vh) @r(50vmin,50vmin) @r(40vmin) @pd(#2198E8, #E9E9F1));
+            animation: cloud 30s linear infinite;
+            animatin-delay: 0;
+            filter: url(#filter);
+        }
+        @keyframes cloud {
+            50% {
+                box-shadow: @m100( @r(100vw) @r(100vh) @r(40vmin,40vmin) @r(30vmin) @pd(#2198E8, #E9E9F1)); 
+            }
+        }
+    </css-doodle>
+    <svg>
+        <filter id="filter">
+            <feTurbulence type="fractalNoise" baseFrequency=".008" numOctaves="100" />
+            <feDisplacementMap in="SourceGraphic" scale="300" />
+        </filter>
+    </svg>
+    </div>
         <div class="container">
           <!--<a id="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false" tabindex="1">
                 <span class="icon-menu" aria-hidden="true"></span>
