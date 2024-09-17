@@ -97,10 +97,15 @@ h3 {
   font-size: 3rem;
 }
 
- .container p{
-   text-align: center;
-   font-size: 1.2rem;
- }
+.container p {
+    text-align: center;
+    font-size: 1.2rem;
+    display: flex;
+}
+
+.container p > img{
+    max-width: 20%;
+}
 
 /*** BASIC LAYOUT: HEADER ***/
 
