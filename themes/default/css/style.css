@@ -175,7 +175,7 @@ h3 {
 /*** BASIC LAYOUT: FOOTER ***/
 
 #footer {
-    background: #be1e2e;
+    background: black;
     color: #C0C0C0;
 }
 
@@ -185,6 +185,7 @@ h3 {
 #footer p {
     margin: 0;
     padding: 3em 0;
+    font-size: 1rem;
 }
 
 #footer .social { align-items: center; display: flex; flex-direction: column; padding-top: 20px;}
@@ -539,7 +540,21 @@ p.two-col {
 .block {
     margin-top: 100px;
     padding: 3rem;
+    display: flex;
+    flex-direction: column;
 }
 .black {
     background-color: black;
+}
+
+#footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.social-2 {
+    width: 40%;
+    align-self: center;
 }
