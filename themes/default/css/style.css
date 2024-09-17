@@ -125,7 +125,7 @@ h3 {
 }
 
  #header .social {
-   margin-top: 20px;
+   margin-top: 40px;
    float: left;
  }
 
@@ -595,7 +595,7 @@ p.two-col {
 #image {
 	overflow: hidden;
 	width: 100%;
-	height: calc(100% - 150px);
+	height: calc(100% - 148px);
 	background: var(--navy);
 	display: grid;
 
