@@ -113,6 +113,8 @@ h3 {
 
 #header {
   /*background: linear-gradient(349deg, rgba(5,191,194,1) 0%, rgba(158,80,181,1) 61%, rgba(254,173,0,1) 100%);*/
+  background-color: #2d1839;
+
  }
 
  #header .container {
@@ -517,6 +519,10 @@ input::-moz-focus-inner, button::-moz-focus-inner {
     align-content: center;
     flex-wrap: nowrap;
     margin-top: 1rem;
+}
+.cycle-slideshow img {
+    width: calc(100vw / 12);
+    height: calc(100vw / 12);
 }
 div#About {
     max-width: 80%;
