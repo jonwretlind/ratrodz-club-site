@@ -81,7 +81,7 @@ h3 {
     padding: 0 0.5em;
     margin: 0 auto;
 }
-.widescreen .container { max-width: 72em; }
+.widescreen .container { max-width: 85vw; }
 
 /* very ugly overflow fix, avoid this whenever possible! */
 #main .container {
