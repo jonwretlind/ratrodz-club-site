@@ -32,11 +32,10 @@
     },
     "require": {
         "php": ">=5.3.6",
-        "ext-mbstring": "*",
         "twig/twig": "^1.36",
         "symfony/yaml" : "^2.8",
-        "erusev/parsedown": "1.8.0-beta-7",
-        "erusev/parsedown-extra": "0.8.0-beta-1"
+        "erusev/parsedown": "~1.8.0|1.8.0@beta",
+        "erusev/parsedown-extra": "~0.8.0|0.8.0@beta"
     },
     "suggest": {
         "picocms/pico-theme": "Pico requires a theme to actually display the contents of your website. This is Pico's official default theme.",
@@ -52,8 +51,8 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "2.1.x-dev",
-            "dev-pico-3.0": "3.0.x-dev"
+            "dev-master": "2.0.x-dev",
+            "dev-pico-2.1": "2.1.x-dev"
         }
     }
 }
