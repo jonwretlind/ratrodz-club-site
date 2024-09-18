@@ -596,12 +596,14 @@ p.two-col {
     background-color: rgba(128, 0, 128, 0.8);
     padding: 2rem;
     border-radius: 0 0 1rem 1rem;
-    max-width: 300px;
+    width: 300px;
     box-shadow: 5px 5px 10px #222;
-    right: 10px;
+    left: calc(50% - 150px);
     position: fixed;
     height: 70px;
     overflow: hidden;
+    transition: all .5s ease-in;
+    
 }
 .mint-btn.header:hover {
     box-shadow: 0px 0px 15px cyan;
@@ -613,7 +615,6 @@ p.two-col {
     margin-top: unset;
 }
 .mint-btn button.btn {
-    display: none;
     background-color: black;
     color: white;
     border-radius: 1rem;
