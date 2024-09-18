@@ -599,7 +599,7 @@ p.two-col {
     width: 100%;
     max-width: 30vw;
     box-shadow: 5px 5px 10px #222;
-    left: calc(50.5% - 150px);
+    left: calc(50.5% - 15vw);
     position: fixed;
     height: 70px;
     overflow: hidden;
