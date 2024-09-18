@@ -595,9 +595,11 @@ p.two-col {
     align-items: center;
     background-color: purple;
     padding: 2rem;
-    border-radius: 3rem;
+    border-radius: 0 0 3rem 3rem;
     max-width: 300px;
     box-shadow: 5px 5px 10px #222;
+    right: 10px;
+    POSITION: fixed;
 }
 .mint-btn.header:hover {
     box-shadow: 0px 0px 15px cyan;
@@ -606,7 +608,7 @@ p.two-col {
     background-color: black;
     color: white;
     border-radius: 1rem;
-    font-size: .8rem;
+    font-size: 1rem;
     padding: 1rem;
     border: 2px solid gold;
     width: 100%;
@@ -614,6 +616,9 @@ p.two-col {
 .mint-btn button.btn:hover {
     background-color: goldenrod;
     box-shadow: 0px 0px 10px yellow;
+}
+.mint-btn button.btn span {
+    font-weight: 900;
 }
 .mint-btn span.txt {
     font-size: .8rem;
