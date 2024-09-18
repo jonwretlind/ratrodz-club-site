@@ -617,6 +617,7 @@ p.two-col {
 .mint-btn button.btn:hover {
     background-color: goldenrod;
     box-shadow: 0px 0px 10px yellow;
+    color: rgb(81, 0, 128)
 }
 .mint-btn button.btn span {
     font-weight: 900;
