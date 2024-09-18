@@ -596,7 +596,8 @@ p.two-col {
     background-color: rgba(128, 0, 128, 0.8);
     padding: 2rem;
     border-radius: 0 0 1rem 1rem;
-    width: 300px;
+    width: 100%;
+    max-width: 30vw;
     box-shadow: 5px 5px 10px #222;
     left: calc(50.5% - 150px);
     position: fixed;
