@@ -598,11 +598,11 @@ p.two-col {
     border-radius: 0 0 1rem 1rem;
     width: 300px;
     box-shadow: 5px 5px 10px #222;
-    left: calc(50% - 150px);
+    left: calc(50.5% - 150px);
     position: fixed;
     height: 70px;
     overflow: hidden;
-    transition: all .5s ease-in;
+    transition: height .75s ease-in;
     
 }
 .mint-btn.header:hover {
