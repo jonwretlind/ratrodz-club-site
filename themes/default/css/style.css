@@ -604,6 +604,11 @@ p.two-col {
 .mint-btn.header:hover {
     box-shadow: 0px 0px 15px cyan;
 }
+.mint-btn h3 {
+    font-size: 1rem;
+    color: gold !important;
+    margin-top: unset;
+}
 .mint-btn button.btn {
     background-color: black;
     color: white;
